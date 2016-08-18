@@ -12,25 +12,29 @@
 <body>
     <div class="container">
         <div class="jumbotron">
-            <div class="h1">I'm on my dot</h1><br>
-            </div>
-            <div class="row>" <form class="form-horizontal">
-                <fieldset>
-                    <div class="form-group">
-                        <label for="select" class="col-lg-1 control-label"><h5>Side</h5></label>
-                        <div class="col-lg-1">
-                            <select class="form-control" id="selectSide">
+
+            <div class="boxSize" id="boxSize">
+
+                <div class="h1">I'm on my dot</h1><br>
+                </div>
+                <div class="row">
+                    <form class="form-horizontal">
+                        <fieldset>
+                            <div class="form-group">
+                                <label for="select" class="control-label"><h5>Side</h5></label>
+                                <div class="selWidth">
+                                    <select class="form-control" id="selectSide selWidth">
           <option value="one">1</option>
           <option value="two">2</option>
           </select>
-                            <br>
-                        </div>
-                    </div>
+                                    <br>
+                                </div>
+                            </div>
 
-                    <div class="form-group">
-                        <label for="select" class="col-lg-1 control-label"><h5>YL</h5></label>
-                        <div class="col-lg-1">
-                            <select class="form-control" id="selectLine">
+                            <div class="form-group">
+                                <label for="select" class="control-label"><h5>Yard Line</h5></label>
+                                <div class="selWidth">
+                                    <select class="form-control" id="selectLine selWidth">
                     <option value="goal">0</option>
                     <option value="five">5</option>
                     <option value="ten">10</option>
@@ -43,14 +47,15 @@
                     <option value="fortyFive">45</option>
                     <option value="fifty">50</option>
                     </select>
-                            <br>
-                        </div>
-                    </div>
+                                    <br>
 
-                    <div class="form-group">
-                        <label for="select" class="col-lg-1 control-label"><h5>DFS</h5></label>
-                        <div class="col-lg-1">
-                            <select class="form-control" id="distanceFromSideline">
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="select" class="control-label"><h5>Distance From Sideline</h5></label>
+                                <div class="selWidth">
+                                    <select class="form-control" id="distanceFromSideline">
                     <option value="one">1</option>
                     <option value="two">2</option>
                     <option value="three">3</option>
@@ -80,47 +85,55 @@
                     <option value="twentySeven">27</option>
                     <option value="twentyEight">28</option>
                         </select>
-                            <br>
-                        </div>
-                    </div>
-
+                                    <br>
+                                </div>
+                            </div>
+                </div>
             </div>
+
             <div class="row">
                 <div class="form-group">
-                    <label class="col-lg-1 control-label">HM</label>
-                    <div class="col-lg-10">
-                        <div class="radio">
+                    <div class="checks">
+                    <label class="col-lg-1 control-label"><h5>Hash Marks</h5></label>
+                    
+                   
+                        <div class="checkbox">
                             <label>
-            <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked="">
-            High School
+            <input type="checkbox"> High School
           </label>
                         </div>
-                        <div class="radio">
+
+                        <div class="checkbox">
                             <label>
-            <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
-            NCAA
+            <input type="checkbox"> College
           </label>
                         </div>
-                        <div class="radio">
+
+                        <div class="checkbox">
                             <label>
-            <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
-            NFL
+            <input type="checkbox">Pro
           </label>
                         </div>
                     </div>
                 </div>
             </div>
+            
+            
+            
 
             <div class="form-group">
+                
                 <div class="col-lg-10 col-lg-offset-2">
                     <button type="reset" class="btn btn-danger">Cancel</button>
                     <button type="submit" class="btn btn-success">Submit</button>
                 </div>
             </div>
-            </fieldset>
-            </form>
-        </div>
+        
+        </fieldset>
+        </form>
     </div>
-</body>
+    </div>
 
+    
+</body>
 </html>
