@@ -1,6 +1,7 @@
 <!DOCTYPE <html>
 
 <head>
+    <link rel="stylesheet" href="reset.css" type="text/css">
     <link rel="stylesheet" href="test.css" type="text/css">
     <link rel="stylesheet" href="bootstrap.css" type="text/css">
     <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7"
@@ -24,9 +25,9 @@
                                 <label for="select" class="control-label"><h5>Side</h5></label>
                                 <div class="selWidth">
                                     <select class="form-control" id="selectSide selWidth">
-          <option value="one">1</option>
-          <option value="two">2</option>
-          </select>
+                                        <option value="one">1</option>
+                                        <option value="two">2</option>
+                                        </select>
                                     <br>
                                 </div>
                             </div>
@@ -92,48 +93,39 @@
             </div>
 
             <div class="row">
+
+
                 <div class="form-group">
-                    <div class="checks">
-                    <label class="col-lg-1 control-label"><h5>Hash Marks</h5></label>
-                    
-                   
-                        <div class="checkbox">
-                            <label>
-            <input type="checkbox"> High School
-          </label>
-                        </div>
-
-                        <div class="checkbox">
-                            <label>
-            <input type="checkbox"> College
-          </label>
-                        </div>
-
-                        <div class="checkbox">
-                            <label>
-            <input type="checkbox">Pro
-          </label>
-                        </div>
+                    <label for="select" class="control-label"><h5>Hash Marks</h5></label>
+                    <div class="selWidth">
+                        <select class="form-control" id="selectHash">
+                                        <option value="HS">High School</option>
+                                        <option value="NCAA">College</option>
+                                        <option value="NFL">Professional</option>
+                                        </select>
+                        <br>
                     </div>
                 </div>
+
             </div>
-            
-            
-            
+
+
+
 
             <div class="form-group">
-                
+
                 <div class="col-lg-10 col-lg-offset-2">
                     <button type="reset" class="btn btn-danger">Cancel</button>
                     <button type="submit" class="btn btn-success">Submit</button>
                 </div>
             </div>
-        
-        </fieldset>
-        </form>
-    </div>
+
+            </fieldset>
+            </form>
+        </div>
     </div>
 
-    
+
 </body>
+
 </html>
