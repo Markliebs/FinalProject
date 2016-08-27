@@ -1,35 +1,29 @@
-@section('title')
-On My Dot
-@endsection
+@section('title') On My Dot @endsection @extends('layout') @section('content')
+<div class="container">
+    <div class="jumbotron">
 
-@extends('layout')
+        <div class="boxSize" id="boxSize">
 
-@section('content')
-    <div class="container">
-        <div class="jumbotron">
-
-            <div class="boxSize" id="boxSize">
-
-                <div class="h1">I'm on my dot</h1><br>
-                </div>
-                <div class="row">
-                    <form class="form-horizontal">
-                        <fieldset>
-                            <div class="form-group">
-                                <label for="select" class="control-label"><h5>Side</h5></label>
-                                <div class="selWidth">
-                                    <select class="form-control" id="selectSide selWidth">
+            <div class="h1">I'm on my dot</h1><br>
+            </div>
+            <div class="row">
+                <form class="form-horizontal">
+                    <fieldset>
+                        <div class="form-group">
+                            <label for="select" class="control-label"><h5>Side</h5></label>
+                            <div class="selWidth">
+                                <select class="form-control" id="selectSide selWidth">
                                         <option value="one">1</option>
                                         <option value="two">2</option>
                                         </select>
-                                    <br>
-                                </div>
+                                <br>
                             </div>
+                        </div>
 
-                            <div class="form-group">
-                                <label for="select" class="control-label"><h5>Yard Line</h5></label>
-                                <div class="selWidth">
-                                    <select class="form-control" id="selectLine selWidth">
+                        <div class="form-group">
+                            <label for="select" class="control-label"><h5>Yard Line</h5></label>
+                            <div class="selWidth">
+                                <select class="form-control" id="selectLine selWidth">
                     <option value="goal">0</option>
                     <option value="five">5</option>
                     <option value="ten">10</option>
@@ -42,15 +36,15 @@ On My Dot
                     <option value="fortyFive">45</option>
                     <option value="fifty">50</option>
                     </select>
-                                    <br>
+                                <br>
 
-                                </div>
                             </div>
+                        </div>
 
-                            <div class="form-group">
-                                <label for="select" class="control-label"><h5>Distance From Sideline</h5></label>
-                                <div class="selWidth">
-                                    <select class="form-control" id="distanceFromSideline">
+                        <div class="form-group">
+                            <label for="select" class="control-label"><h5>Distance From Sideline</h5></label>
+                            <div class="selWidth">
+                                <select class="form-control" id="distanceFromSideline">
                     <option value="one">1</option>
                     <option value="two">2</option>
                     <option value="three">3</option>
@@ -80,42 +74,42 @@ On My Dot
                     <option value="twentySeven">27</option>
                     <option value="twentyEight">28</option>
                         </select>
-                                    <br>
-                                </div>
+                                <br>
                             </div>
-                </div>
+                        </div>
             </div>
+        </div>
 
-            <div class="row">
+        {{-- <div class="row">
 
 
-                <div class="form-group">
-                    <label for="select" class="control-label"><h5>Hash Marks</h5></label>
-                    <div class="selWidth">
-                        <select class="form-control" id="selectHash">
+            <div class="form-group">
+                <label for="select" class="control-label"><h5>Hash Marks</h5></label>
+                <div class="selWidth">
+                    <select class="form-control" id="selectHash">
                                         <option value="HS">High School</option>
                                         <option value="NCAA">College</option>
                                         <option value="NFL">Professional</option>
                                         </select>
-                        <br>
-                    </div>
-                </div>
-
-            </div>
-
-
-
-
-            <div class="form-group">
-
-                <div class="col-lg-10 col-lg-offset-2">
-                    <button type="reset" class="btn btn-danger">Cancel</button>
-                    <button type="submit" class="btn btn-success">Submit</button>
+                    <br>
                 </div>
             </div>
 
-            </fieldset>
-            </form>
+        </div> --}}
+
+
+
+
+        <div class="form-group">
+
+            <div class="col-lg-10 col-lg-offset-2">
+                <button type="reset" class="btn btn-danger">Cancel</button>
+                <button type="submit" class="btn btn-success">Submit</button>
+            </div>
         </div>
+
+        </fieldset>
+        </form>
     </div>
+</div>
 @stop
