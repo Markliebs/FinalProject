@@ -10,8 +10,8 @@ var mysql = require('mysql');
 var connection = mysql.createConnection({
     host: 'localhost',
     user: 'root',
-    password: 'root',
-    database: 'gtfo_db'
+    password: '',
+    database: 'testDB'
 });
 
 function connect() {

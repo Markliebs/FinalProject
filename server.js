@@ -16,7 +16,7 @@ var connection = mysql.createConnection({
 	host: 'localhost',
 	user: 'root',
 	password: '',
-	database: 'dbTest'
+	database: 'testDB'
 });
 
 function connectToDB(){
@@ -24,10 +24,12 @@ function connectToDB(){
 		if (err) {
 			console.error('error connection:', err.stack);
 			return
-		}
-		console.log('connected to MySQL DB')
+		} else {
+		console.log('connected to MySQL DB') }
 	});
 }
+
+connectToDB();
 
 var port = process.env.PORT || 3000;
 //confirms active server in node
